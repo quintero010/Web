@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.cv-container {
+  width: 90%;
+  max-width: 1000px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  padding: 30px;
+  position: relative;
+}
+
+.cv-box {
+  background: #e9e9e9;
+  border-radius: 8px;
+  padding: 20px;
+  min-height: 120px;
+}
+
+.contact-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  border-radius: 10px;
+  width: 260px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.contact-card a {
+  color: #61dafb;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.btn-cv {
+  display: inline-block;
+  margin-top: 15px;
+  background: #6a4bf4;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-cv:hover {
+  background: #5637d4;
+}
+
+/* ✅ RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .cv-container {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .contact-card {
+    position: static;
+    transform: none;
+    margin-top: 20px;
+    width: 100%;
+  }
+}

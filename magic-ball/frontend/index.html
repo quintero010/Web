@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi Página Sencilla</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <h1>Mi Página</h1>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#acerca">Acerca</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- SECCIÓN INICIO -->
+  <section id="inicio" class="container">
+    <h2>Bienvenido</h2>
+    <p>Esta es una página web súper sencilla hecha solo con HTML y CSS.</p>
+    <button onclick="alert('¡Gracias por visitar!')">Haz clic</button>
+  </section>
+
+  <!-- SECCIÓN ACERCA -->
+  <section id="acerca" class="container alt">
+    <h2>Acerca de esta página</h2>
+    <p>Es un ejemplo básico para practicar HTML y CSS sin frameworks ni complicaciones.</p>
+  </section>
+
+  <!-- SECCIÓN CONTACTO -->
+  <section id="contacto" class="container">
+    <h2>Contacto</h2>
+    <p>¿Tienes dudas? ¡Escríbeme!</p>
+    <form>
+      <input type="text" placeholder="Tu nombre" required />
+      <input type="email" placeholder="Tu correo" required />
+      <textarea placeholder="Tu mensaje..." required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 Mi página sencilla
+  </footer>
+
+</body>
+</html>
